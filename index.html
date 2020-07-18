@@ -4,16 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Cerda's Code Review</title>
 </head>
 
-    <header>
+    <header class="main-header">
         <h1>Cerda's Code Review</h1>
     </header>
 
-    <div>
-        <h2>Sign up for our weekly newsletter</h2>
-        <p>Get the latest news on all things code and tech everyweek, directly to your inbox!</p>
+    <div class="main-intro">
+
+        <h2>Sign up for our weekly newsletter</h2><br>
+        <p>Get the latest news on all things code and tech everyweek, directly to your inbox!</p><br>
+        
+        <hr class="rounded">
+
     </div>
 
 
@@ -21,11 +26,11 @@
 
     <form action="index.html" method="POST">
 
-        <div class="contact_info">
+        <div class="contact-info">
 
             <h2>Contact Information</h2>
 
-            <fieldset>
+            <fieldset class="field-set">
 
                 <label for="name">Full Name:</label>
                 <input type="text" id="name" name="user_name">
@@ -68,31 +73,35 @@
                 <input type="text" id="zip" name="user_zip">
 
             </fieldset>
+
         </div>
 
-        <div>
+
+        <div class="news-letter">
+
+            <hr class="dashed">
 
             <h2>Newsletter</h2>
 
                 <fieldset>
 
                     <label>Select the Newsletter's you'd like to recieve</label><br>
-                    <input type="checkbox" id="html_news" value="html_news" name="html_news"><label for="html_news">HTML News</label>
-                    <input type="checkbox" id="css_news" value="css_news" name="css_news"><label for="css_news">CSS News</label>
-                    <input type="checkbox" id="javascript_news" value="javascript_news" name="javascript_news"><label for="javascript_news">Javascript News</label>
-                    <input type="checkbox" id="tech_news" value="tech_news" name="tech_news"><label for="tech_news">Tech News</label>
-                    <input type="checkbox" id="poke_news" value="poke_news" name="poke_news"><label for="poke_news">Pokémon News</label><br>
+                    <input type="checkbox" id="html_news" value="html_news" name="news"><label for="html_news">HTML News</label>
+                    <input type="checkbox" id="css_news" value="css_news" name="news"><label for="css_news">CSS News</label>
+                    <input type="checkbox" id="javascript_news" value="javascript_news" name="news"><label for="javascript_news">Javascript News</label>
+                    <input type="checkbox" id="tech_news" value="tech_news" name="news"><label for="tech_news">Tech News</label>
+                    <input type="checkbox" id="poke_news" value="poke_news" name="news"><label for="poke_news">Pokémon News</label><br>
                     <br>
                     
 
                     <label>Newsletter format</label><br>
-                    <input type="radio" id="html" value="html" name="html"><label for="html">HTML</label>
-                    <input type="radio" id="plain_text" value="plain_text" name="plain_text"><label for="plain_text">Plain Text</label><br>
+                    <input type="radio" id="html" value="html" name="newsletter"><label for="html">HTML</label>
+                    <input type="radio" id="plain_text" value="plain_text" name="newsletter"><label for="plain_text">Plain Text</label><br>
                     <br>
 
                     <label>Language</label><br>
-                    <input type="radio" id="english" value="english" name="english"><label for="english">English</label>
-                    <input type="radio" id="spanish" value="spanish" name="spanish"><label for="spanish">Spanish</label><br>
+                    <input type="radio" id="english" value="english" name="language"><label for="english">English</label>
+                    <input type="radio" id="spanish" value="spanish" name="language"><label for="spanish">Spanish</label><br>
                     <br>
 
                     <p>Other topics you'd like to hear about</p>
@@ -100,7 +109,7 @@
 
                 </fieldset>
 
-            <button type="submit">Sign Up</button>
+            <button type="submit" class="button">Sign Up</button>
 
         </div>
 

@@ -1,0 +1,47 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* mobile first styles */
+body {
+    background-color: slategray;
+}
+
+h1,
+h2,
+p {
+    text-align: center;
+}
+
+h1 {
+    color: rgb(46, 83, 153);
+    text-transform: uppercase;
+}
+
+
+.main-header {
+    background-color: rgb(250, 145, 250);
+    padding: 1em 0 1em 0;
+    margin-bottom: 2em;
+}
+
+hr.rounded {
+    border-top: 8px solid #bbb;
+    border-radius: 10px;
+    padding-bottom: .25em;
+    margin: 1.5em 0 .75em 0;
+  }
+
+ 
+  hr.dashed {
+    border-top: 10px dashed #bbb;
+    margin: 2em 0 1em 0;
+  }
+
+  .news-letter,
+  .button {
+      display: flex;
+      flex-direction: column;
+  }
