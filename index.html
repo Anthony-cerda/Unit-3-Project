@@ -13,7 +13,7 @@
 
     <div>
         <h2>Sign up for our weekly newsletter</h2>
-        <p>Get the latest news on all things code and tech everyweek, directly in your inbox!</p>
+        <p>Get the latest news on all things code and tech everyweek, directly to your inbox!</p>
     </div>
 
 
@@ -23,7 +23,9 @@
 
         <div class="contact_info">
 
-            <h2>Contact Information</h2>
+            <fieldset>
+
+                <legend>Contact Information</legend>
 
                 <label for="name">Full Name:</label>
                 <input type="text" id="name" name="user_name">
@@ -41,18 +43,42 @@
                 <input type="text" id="city" name="user_city">
 
                 <label for="state">State:</label>
-                <input type="text" id="state" name="user_state">
+                <select id="state" name="user_state">
+
+                    <option value="select">Select One</option>
+                    
+                <optgroup label="United States">
+                        <option value="texas">Texas</option>
+                        <option value="california">California</option>
+                        <option value="colorado">Colorado</option>
+                        <option value="nevada">Nevada</option>
+                        <option value="washington">Washington</option>
+                        <option value="utah">Utah</option>
+                </optgroup>
+
+                <optgroup label="Mexico">
+                    <option value="baja_california">Baja California</option>
+                    <option value="sonora">Sonora</option>
+                    <option value="chihuahua">Chihuahua</option>
+                </optgroup>
+
+                </select>
 
                 <label for="zip">Zip:</label>
                 <input type="text" id="zip" name="user_zip">
 
+            </fieldset>
         </div>
 
         <div>
 
-            <h2>Newsletter</h2>
+                <fieldset>
 
-            <textarea id="suggestions" name="user_suggestions"></textarea>
+                    <legend>Newsletter</legend>
+
+                    <textarea id="suggestions" name="user_suggestions"></textarea>
+
+                </fieldset>
 
             <button type="submit">Sign Up</button>
 
