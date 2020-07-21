@@ -25,31 +25,32 @@
 
 <body>
 
+
     <form action="index.html" method="POST">
 
-        <div class="container">
+        <div class="container-1">
 
 
           
 
             <h2>Contact Information</h2>
 
-            <fieldset class="f-contact">
+
 
                 <label for="name">Full Name:</label>
-                <input type="text" id="name" name="user_name" placeholder="Required">
+                <input type="text" id="name" name="user_name" placeholder="Required"><br>
 
                 <label for="email">Email Address:</label>
-                <input type="email" id="email" name="user_email" placeholder="Required">
+                <input type="email" id="email" name="user_email" placeholder="Required"><br>
 
                 <label for="phone">Phone Number:</label>
-                <input type="text" id="phone" name="user_phone">
+                <input type="text" id="phone" name="user_phone" placeholder="(123)-456-789"><br>
 
                 <label for="street">Street Address:</label>
-                <input type="text" id="street" name="user_street">
+                <input type="text" id="street" name="user_street" placeholder="667 Elm Street"><br>
 
                 <label for="city">City:</label>
-                <input type="text" id="city" name="user_city">
+                <input type="text" id="city" name="user_city" placeholder="Sacramento"><br>
 
                 <label for="state">State:</label>
                 <select id="state" name="user_state">
@@ -70,46 +71,45 @@
                     <option value="sonora">Sonora</option>
                     <option value="chihuahua">Chihuahua</option>
                 </optgroup>
-
-                </select>
+                
+                </select><br>
 
                 <label for="zip">Zip:</label>
-                <input type="text" id="zip" name="user_zip">
+                <input type="text" id="zip" name="user_zip" placeholder="12345"><br>
 
-            </fieldset>
+
+
 
 
             <h2>Newsletter</h2>
 
-                <fieldset class="f-news">
-
+        
                     <label>Select the Newsletter's you'd like to recieve</label><br>
-                    <input type="checkbox" id="html_news" value="html_news" name="news"><label for="html_news">HTML News</label>
-                    <input type="checkbox" id="css_news" value="css_news" name="news"><label for="css_news">CSS News</label>
-                    <input type="checkbox" id="javascript_news" value="javascript_news" name="news"><label for="javascript_news">Javascript News</label>
-                    <input type="checkbox" id="tech_news" value="tech_news" name="news"><label for="tech_news">Tech News</label>
-                    <input type="checkbox" id="poke_news" value="poke_news" name="news"><label for="poke_news">Pokémon News</label><br>
+                    <input type="checkbox" id="html_news" value="html_news" name="news"><label for="html_news" class="label">HTML News</label><br>
+                    <input type="checkbox" id="css_news" value="css_news" name="news"><label for="css_news" class="label">CSS News</label><br>
+                    <input type="checkbox" id="javascript_news" value="javascript_news" name="news"><label for="javascript_news" class="label">Javascript News</label><br>
+                    <input type="checkbox" id="tech_news" value="tech_news" name="news"><label for="tech_news" class="label">Tech News</label><br>
+                    <input type="checkbox" id="poke_news" value="poke_news" name="news"><label for="poke_news" class="label">Pokémon News</label><br>
                     <br>
                     
 
                     <label>Newsletter format</label><br>
-                    <input type="radio" id="html" value="html" name="newsletter"><label for="html">HTML</label>
-                    <input type="radio" id="plain_text" value="plain_text" name="newsletter"><label for="plain_text">Plain Text</label><br>
+                    <input type="radio" id="html" value="html" name="newsletter"><label for="html" class="label">HTML</label><br>
+                    <input type="radio" id="plain_text" value="plain_text" name="newsletter"><label for="plain_text" class="label">Plain Text</label><br>
                     <br>
 
                     <label>Language</label><br>
-                    <input type="radio" id="english" value="english" name="language"><label for="english">English</label>
-                    <input type="radio" id="spanish" value="spanish" name="language"><label for="spanish">Spanish</label><br>
+                    <input type="radio" id="english" value="english" name="language"><label for="english" class="label">English</label><br>
+                    <input type="radio" id="spanish" value="spanish" name="language"><label for="spanish" class="label">Spanish</label><br>
                     <br>
-
+      
                     <p>Other topics you'd like to hear about</p>
                     <textarea id="suggestions" name="user_suggestions"></textarea>
 
-                </fieldset>
 
             <button type="submit" class="button">Sign Up</button>
 
-        </div>
+ </div>
 
 
     </form>
