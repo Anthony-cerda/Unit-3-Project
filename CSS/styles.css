@@ -52,7 +52,7 @@
     margin-left: 15px;
     }
 
-    input[type="text"],
+input[type="text"],
 input[type="email"],
 select {
   background: rgb(97, 100, 99);
@@ -76,7 +76,7 @@ input[type="checkbox"] {
 
 select {
   padding: 6px;
-  height: 32px;
+  height: 48px;
   border-radius: 2px;
 }
 
