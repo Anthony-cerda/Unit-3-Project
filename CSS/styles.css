@@ -1,13 +1,17 @@
 * {
     box-sizing: border-box;
+    font-family: 'Merriweather', serif;
 }
+
+
 
   h1 {
       background: rgb(40, 53, 94);
-      height: 100px;
+      height: 150px;
       color: mintcream;
-      padding-top: 25px;
       text-transform: uppercase;
+      padding-top: 50px;
+      margin: auto;
   }
 
   h1,
@@ -17,7 +21,7 @@
   }
 
   .main-intro p {
-      color: rgb(176, 179, 177);
+      color: rgb(118, 121, 119);
   }
 
   footer {
@@ -37,6 +41,12 @@
     margin-left: 15px;
   }
 
+ .main-intro {
+    background-color:  skyblue;
+    padding-top: 20px;
+    margin-bottom: 2em;
+  }
+
   .p-t {
     margin-left: 20px;
     font-size: 20px;
@@ -54,6 +64,7 @@
 
 input[type="text"],
 input[type="email"],
+input[type="telephone"],
 select {
   background: rgb(97, 100, 99);
   border: none;
@@ -69,10 +80,12 @@ select {
   margin-bottom: 30px;
 }
 
+
 input[type="radio"],
 input[type="checkbox"] {
   margin: 0 4px 8px 0;
 }
+
 
 select {
   padding: 6px;
@@ -104,6 +117,8 @@ form {
   flex-direction: column;
   margin: auto;
 }
+
+
 
 
 }
