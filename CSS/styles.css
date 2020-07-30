@@ -35,6 +35,9 @@ form  {
     flex-direction: column;
   }
 
+  #zip {
+    width: 50%;
+  }
   
 
   footer {
@@ -112,14 +115,19 @@ legend {
 
 
 
+
 @media (min-width: 768px) {
 
-   .contact,
-   .flex-pair {
+   .contact {
     flex-direction: row;
     width: 85%;
     margin: auto;
   }
+
+  #zip {
+    width: 25%;
+  }
+
   .contact input {
     flex-grow: 1;
     flex-basis: 75%;
@@ -136,6 +144,7 @@ legend {
     width: 75%;
   }
 
+  
  
   .p-t,
   textarea {
@@ -162,6 +171,7 @@ legend {
     background-color: #FFFF66;
     border: 1px solid #F47E58;
 }
+
 
 
 
