@@ -120,7 +120,7 @@ legend {
 
    .contact {
     flex-direction: row;
-    width: 85%;
+    width: 75%;
     margin: auto;
   }
 
@@ -162,9 +162,7 @@ legend {
     width: 75%;
   }
 
-  .l-c {
-    margin: 75px;
-  }
+
   
   input:focus, textarea:focus {
     transition: cubic-bezier(0.25, 0.46, 0.45, 0.94);
