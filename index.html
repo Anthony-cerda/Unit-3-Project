@@ -95,31 +95,53 @@
         
              
                     <label>Select the Newsletter's you'd like to recieve</label>
-                    <input type="checkbox" id="html_news" value="html_news" name="news"><label for="html_news" class="label">HTML News</label>
-                    <input type="checkbox" id="css_news" value="css_news" name="news"><label for="css_news" class="label">CSS News</label>
-                    <input type="checkbox" id="javascript_news" value="javascript_news" name="news"><label for="javascript_news" class="label">Javascript News</label>
-                    <input type="checkbox" id="tech_news" value="tech_news" name="news"><label for="tech_news" class="label">Tech News</label>
 
+                <div class="flex">
+                    <input type="checkbox" id="html_news" value="html_news" name="news"><label for="html_news" class="label">HTML News</label>
+                </div>
+
+                <div class="flex">
+                    <input type="checkbox" id="css_news" value="css_news" name="news"><label for="css_news" class="label">CSS News</label>
+                </div>
+
+                <div class="flex">
+                    <input type="checkbox" id="javascript_news" value="javascript_news" name="news"><label for="javascript_news" class="label">Javascript News</label>
+                </div>
+
+                <div class="flex">
+                    <input type="checkbox" id="tech_news" value="tech_news" name="news"><label for="tech_news" class="label">Tech News</label>
+                </div>
                     
 
-                    <label>Newsletter format</label><br>
+                    <label>Newsletter format</label>
+
+                 <div class="flex">
                     <input type="radio" id="html" value="html" name="newsletter"><label for="html" class="label">HTML</label>
+                </div>
+
+                <div class="flex">
                     <input type="radio" id="plain_text" value="plain_text" name="newsletter"><label for="plain_text" class="label">Plain Text</label>
-  
+                </div>
 
 
                     <label>Language</label>
+
+                <div class="flex">
                     <input type="radio" id="english" value="english" name="language"><label for="english" class="label">English</label>
+                </div>
+
+                <div class="flex">
                     <input type="radio" id="spanish" value="spanish" name="language"><label for="spanish" class="label">Spanish</label>
-          
+                </div>
 
 
       
-                </fieldset>
+               
 
                     <p class="p-t">Other topics you'd like to hear about</p>
                     <textarea id="suggestions" name="user_suggestions"></textarea>
-
+                    
+            </fieldset>
 
             <button type="submit" class="button">Sign Up</button>
 

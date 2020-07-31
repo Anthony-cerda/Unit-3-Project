@@ -1,116 +1,116 @@
 * {
-    box-sizing: border-box;
-    font-family: 'Merriweather', serif;
+  box-sizing: border-box;
+  font-family: 'Merriweather', serif;
 }
 
 
 form  {
+display: flex;
+justify-content: center;
+flex-direction: column;
+}
+h1 {
+    background: rgb(40, 53, 94);
+    height: 150px;
+    color: mintcream;
+    text-transform: uppercase;
+    padding-top: 50px;
+    margin: auto;
+}
+
+h1,
+.main-intro,
+footer {
+  text-align: center;
+}
+
+.main-intro p {
+    color: rgb(118, 121, 119);
+}
+
+ .contact,
+ .newsletter,
+ .flex-pair {
   display: flex;
-  justify-content: center;
   flex-direction: column;
 }
-  h1 {
-      background: rgb(40, 53, 94);
-      height: 150px;
-      color: mintcream;
-      text-transform: uppercase;
-      padding-top: 50px;
-      margin: auto;
-  }
 
-  h1,
-  .main-intro,
-  footer {
-    text-align: center;
-  }
+#zip {
+  max-width: 200px;
+}
 
-  .main-intro p {
-      color: rgb(118, 121, 119);
-  }
 
-   .contact,
-   .newsletter,
-   .flex-pair {
-    display: flex;
-    flex-direction: column;
-  }
+footer {
+    margin-top: 3em;
+    color: rgb(189, 180, 180);
+    margin-bottom: 3em;
+}
 
-  #zip {
-    width: 50%;
-  }
-  
+textarea {
+  height: 160px;
+  width: 95%;
+  align-self: center;
+  margin-bottom: 50px;
+  border-radius: 8px;
+  background-color: rgb(176, 179, 177);
+  border: none;
+  margin-left: 15px;
+}
 
-  footer {
-      margin-top: 3em;
-      color: rgb(189, 180, 180);
-      margin-bottom: 3em;
-  }
+.main-intro {
+  background-color:  skyblue;
+  padding-top: 20px;
+  margin-bottom: 2em;
+}
 
- textarea {
-    height: 160px;
-    width: 95%;
-    align-self: center;
-    margin-bottom: 50px;
-    border-radius: 8px;
-    background-color: rgb(176, 179, 177);
-    border: none;
-    margin-left: 15px;
-  }
+.p-t {
+  margin-left: 20px;
+  font-size: 20px;
+}
 
- .main-intro {
-    background-color:  skyblue;
-    padding-top: 20px;
-    margin-bottom: 2em;
+.button {
+  border-radius: 8px;
+  height: 80px;
+  width: 95%;
+  color: whitesmoke;
+  background: cadetblue;
+  align-self: center;
+  margin-left: 15px;
   }
-
-  .p-t {
-    margin-left: 20px;
-    font-size: 20px;
-  }
-
-  .button {
-    border-radius: 8px;
-    height: 80px;
-    width: 95%;
-    color: whitesmoke;
-    background: cadetblue;
-    align-self: center;
-    margin-left: 15px;
-    }
 
 input[type="text"],
 input[type="email"],
 input[type="telephone"],
 select {
-  background: rgb(97, 100, 99);
-  border: none;
-  font-size: 16px;
-  height: auto;
-  margin: 0;
-  outline: 0;
-  padding: 15px;
-  width: 100%;
-  background-color: #c6caca;
-  color: #76797a;
-  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
-  margin-bottom: 30px;
+background: rgb(97, 100, 99);
+border: none;
+font-size: 16px;
+height: auto;
+margin: 0;
+outline: 0;
+padding: 15px;
+width: 100%;
+background-color: #c6caca;
+color: #76797a;
+box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+margin-bottom: 30px;
 }
 
 select {
-  padding: 6px;
-  height: 48px;
-  border-radius: 2px;
+padding: 6px;
+height: 48px;
+border-radius: 2px;
 }
 
 
 fieldset {
-  margin-bottom: 30px;
-  border: none;
+margin-bottom: 30px;
+border: none;
 }
 
 legend {
-  font-size: 1.4em;
-  margin-bottom: 10px;
+font-size: 1.4em;
+margin-bottom: 10px;
 }
 
 
@@ -118,56 +118,62 @@ legend {
 
 @media (min-width: 768px) {
 
-   .contact {
-    flex-direction: row;
-    width: 75%;
-    margin: auto;
-  }
-
-  #zip {
-    width: 25%;
-  }
-
-  .contact input {
-    flex-grow: 1;
-    flex-basis: 75%;
-  }
-  .contact label {
-    flex-basis: 25%;
-    height:50px;
-  }
-
-  .newsletter {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    width: 75%;
-  }
-
   
- 
-  .p-t,
-  textarea {
-    display: flex;
-    flex-direction: column;
-    width: 75%;
-  }
 
-  .p-t {
-    margin: 10px auto 10px auto;
-  }
+ .contact {
+  flex-direction: row;
+  width: 75%;
+  margin: auto;
+}
 
-  .button {
-    justify-content: center;
-    width: 75%;
-  }
+.flex-pair {
+  flex-direction: row;
+} 
+
+select {
+  width: 75%;
+}
 
 
-  
-  input:focus, textarea:focus {
-    transition: cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    background-color: #FFFF66;
-    border: 1px solid #F47E58;
+
+
+.contact input {
+  flex-grow: 1;
+  flex-basis: 75%;
+}
+.contact label {
+  flex-basis: 25%;
+  height:50px;
+}
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 75%;
+}
+
+.flex {
+  padding: 5px;
+}
+
+
+
+.p-t {
+  margin: 30px auto 10px auto;
+}
+
+.button {
+  justify-content: center;
+  width: 75%;
+}
+
+
+
+input:focus, textarea:focus {
+  transition: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  background-color: #FFFF66;
+  border: 1px solid #F47E58;
 }
 
 
@@ -176,7 +182,6 @@ legend {
 
 
 }
-
    
   
 
